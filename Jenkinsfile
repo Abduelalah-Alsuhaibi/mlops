@@ -18,7 +18,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 // Ensure the Dockerfile and app.py are in the correct directory
-                sh 'docker build -t $DOCKER_IMAGE ./src'  // Adjust path if needed
+                sh 'docker build -t $DOCKER_IMAGE ./source'  // Adjust path if needed
             }
         }
 
